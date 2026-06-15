@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folio & Fox Books — An Evening of Words & Wonder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────────── -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="Folio and Fox Books">Folio <span>&</span> Fox</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">The Evening</a></li>
+      <li><a href="#authors">Authors</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#details" class="nav-cta">Reserve Seat</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────── -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">Folio &amp; Fox Books · Portland, Oregon</span>
+        <div class="eyebrow-line"></div>
+      </div>
+
+      <h1 class="hero-title">
+        An Evening of
+        <em class="hero-title-italic">Words &amp; Wonder</em>
+      </h1>
+
+      <div class="hero-ornament" aria-hidden="true">
+        <div class="orn-line"></div>
+        <div class="orn-diamond"></div>
+        <div class="orn-line" style="background:linear-gradient(270deg,transparent,rgba(123,24,24,.7),transparent)"></div>
+      </div>
+
+      <p class="hero-subtitle">
+        Four extraordinary voices. One intimate night.<br>
+        Join Portland's most beloved independent bookshop for an unforgettable evening of stories, poetry, and conversation.
+      </p>
+
+      <div class="hero-meta" aria-label="Event details">
+        <div class="meta-item">
+          <div class="meta-label">Date</div>
+          <div class="meta-value">August 16, 2025</div>
+        </div>
+        <div class="meta-sep" aria-hidden="true"></div>
+        <div class="meta-item">
+          <div class="meta-label">Time</div>
+          <div class="meta-value">7:00 PM</div>
+        </div>
+        <div class="meta-sep" aria-hidden="true"></div>
+        <div class="meta-item">
+          <div class="meta-label">Venue</div>
+          <div class="meta-value">NW Thurman St</div>
+        </div>
+      </div>
+
+      <a href="#details" class="hero-cta" aria-label="Reserve your seat for the event">
+        Reserve Your Seat
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" aria-label="Scroll down">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT THE EVENT ────────────────────────── -->
+  <section class="section-about" id="about" aria-labelledby="about-heading">
+    <div class="about-inner">
+
+      <div class="about-quote-col reveal">
+        <div class="big-quote-mark" aria-hidden="true">"</div>
+        <blockquote class="about-quote">
+          A room full of readers is a room full of people who understand that stories are how we survive the world.
+        </blockquote>
+        <div class="quote-attr">
+          <div class="quote-attr-line" aria-hidden="true"></div>
+          <span class="quote-attr-text">Folio &amp; Fox Books, Est. 2009</span>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="section-eyebrow reveal">The Evening</p>
+        <h2 class="section-heading reveal reveal-d1" id="about-heading">
+          A Gathering of<br>Literary Voices
+        </h2>
+        <p class="body-text reveal reveal-d2">
+          Every few months, we close the shelves early and open the floor to the writers who fill them. This August, four extraordinary authors come together to share new work, read from their pages, and talk about the craft of turning lived experience into language.
+        </p>
+        <p class="body-text reveal reveal-d2">
+          Whether you're a lifelong devotee of literary fiction or just beginning to find your reading life, this evening is designed to feel like the best dinner-party conversation you've ever been part of — with books as the starting point.
+        </p>
+        <div class="about-features reveal reveal-d3">
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <div>
+              <div class="feature-label">Live Readings</div>
+              <div class="feature-sub">New &amp; unpublished work</div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <div>
+              <div class="feature-label">Open Q&amp;A</div>
+              <div class="feature-sub">Audience questions welcome</div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <div>
+              <div class="feature-label">Book Signing</div>
+              <div class="feature-sub">Meet the authors after</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FEATURED AUTHORS (CSS Grid 2-col) ─────── -->
+  <section class="section-authors" id="authors" aria-labelledby="authors-heading">
+    <div class="authors-header">
+      <div>
+        <p class="section-eyebrow reveal">Featured Authors</p>
+        <h2 class="section-heading reveal reveal-d1" id="authors-heading">
+          The Voices of<br>the Evening
+        </h2>
+      </div>
+      <p class="authors-header-note reveal reveal-d2">
+        Four distinct worlds, one transformative night at Portland's most intimate literary venue.
+      </p>
+    </div>
+
+    <div class="authors-grid" role="list">
+
+      <!-- Author 1 -->
+      <article class="author-card reveal" role="listitem">
+        <div class="author-photo-wrap" aria-hidden="true">
+          <div class="author-photo av-1">E.M</div>
+        </div>
+        <div class="author-body">
+          <span class="author-tag">Literary Fiction</span>
+          <h3 class="author-name">Elena Marchetti</h3>
+          <p class="author-book">The Cartographer's Daughter</p>
+          <p class="author-bio">Elena's debut novel traces three generations of a Venetian family through hand-drawn maps and the silences between them. Winner of the PEN/Faulkner Award and hailed by the Times as "a masterwork of quiet devastation." She lives and writes in Astoria, Oregon.</p>
+          <div class="author-links">
+            <a href="#" aria-label="Elena Marchetti's website">Website</a>
+            <a href="#" aria-label="Elena Marchetti on Instagram">Instagram</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Author 2 -->
+      <article class="author-card reveal reveal-d1" role="listitem">
+        <div class="author-photo-wrap" aria-hidden="true">
+          <div class="author-photo av-2">J.O</div>
+        </div>
+        <div class="author-body">
+          <span class="author-tag">Poetry</span>
+          <h3 class="author-name">James Okafor</h3>
+          <p class="author-book">Songs from the Root</p>
+          <p class="author-bio">James's debut collection moves between Lagos and Portland, finding the spiritual geometry connecting both cities. His poems have appeared in The Paris Review and were shortlisted for the National Book Award. He teaches at Reed College.</p>
+          <div class="author-links">
+            <a href="#" aria-label="James Okafor's website">Website</a>
+            <a href="#" aria-label="James Okafor on Instagram">Instagram</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Author 3 -->
+      <article class="author-card reveal reveal-d2" role="listitem">
+        <div class="author-photo-wrap" aria-hidden="true">
+          <div class="author-photo av-3">S.V</div>
+        </div>
+        <div class="author-body">
+          <span class="author-tag">Short Stories</span>
+          <h3 class="author-name">Sarah Voss</h3>
+          <p class="author-book">Everything Between</p>
+          <p class="author-bio">Sarah's collection captures the overlooked spaces of American life — laundromats, hospital waiting rooms, rest stops — with precision that turns the ordinary luminous. A Pushcart Prize recipient and former Stegner Fellow at Stanford University.</p>
+          <div class="author-links">
+            <a href="#" aria-label="Sarah Voss's website">Website</a>
+            <a href="#" aria-label="Sarah Voss on Instagram">Instagram</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Author 4 -->
+      <article class="author-card reveal reveal-d3" role="listitem">
+        <div class="author-photo-wrap" aria-hidden="true">
+          <div class="author-photo av-4">D.P</div>
+        </div>
+        <div class="author-body">
+          <span class="author-tag">Memoir</span>
+          <h3 class="author-name">David Park</h3>
+          <p class="author-book">The Garden of Small Things</p>
+          <p class="author-bio">David's memoir follows his return to his grandmother's garden in rural Oregon after years in Seoul, weaving together botany, grief, and the inheritance of place. Critics have called his writing "Thoreau for a fractured century." He grew up in Hillsboro.</p>
+          <div class="author-links">
+            <a href="#" aria-label="David Park's website">Website</a>
+            <a href="#" aria-label="David Park on Instagram">Instagram</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── EVENT DETAILS — Ticket Stub ─────────── -->
+  <section class="section-details" id="details" aria-labelledby="details-heading">
+    <div class="details-inner">
+
+      <div class="details-header">
+        <p class="section-eyebrow reveal">Plan Your Visit</p>
+        <h2 class="section-heading reveal reveal-d1" id="details-heading">
+          Everything You<br>Need to Know
+        </h2>
+      </div>
+
+      <div class="ticket reveal reveal-d2" role="region" aria-label="Event ticket details">
+        <div class="ticket-col">
+          <span class="ticket-icon" aria-hidden="true">📅</span>
+          <div class="ticket-label">Date</div>
+          <div class="ticket-value">Saturday<br>August 16</div>
+          <div class="ticket-sub">2025</div>
+        </div>
+        <div class="ticket-col">
+          <span class="ticket-icon" aria-hidden="true">🕖</span>
+          <div class="ticket-label">Time</div>
+          <div class="ticket-value">Doors 6:30<br>Reading 7:00</div>
+          <div class="ticket-sub">Ends approximately 9:30 PM</div>
+        </div>
+        <div class="ticket-col">
+          <span class="ticket-icon" aria-hidden="true">🎟</span>
+          <div class="ticket-label">Admission</div>
+          <div class="ticket-value">$15 General<br>$10 Members</div>
+          <div class="ticket-sub">Includes signed author bookplate</div>
+        </div>
+        <div class="ticket-bar">
+          <span class="ticket-bar-text">Folio &amp; Fox Books · 2847 NW Thurman St, Portland OR 97210</span>
+          <span class="ticket-bar-text">Seating is <span>limited</span> — reserve early</span>
+        </div>
+      </div>
+
+      <div class="details-cta-row reveal reveal-d3">
+        <a href="#" class="btn-primary" aria-label="Reserve your seat online">
+          Reserve Your Seat
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#" class="btn-outline" aria-label="Add event to calendar">Add to Calendar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── LOCATION ──────────────────────────────── -->
+  <section class="section-location" id="location" aria-labelledby="location-heading">
+    <div class="location-inner">
+
+      <div class="location-text reveal">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-heading" id="location-heading">Folio &amp; Fox Books</h2>
+        <address class="location-address" style="font-style:normal">
+          <strong>2847 NW Thurman Street</strong><br>
+          Portland, OR 97210<br><br>
+          Street parking available on Thurman.<br>
+          TriMet Bus Line 15 stops one block away.<br>
+          Accessible entrance on NW 28th Ave.
+        </address>
+      </div>
+
+      <div class="location-visual reveal reveal-d1" aria-label="Map placeholder for 2847 NW Thurman Street Portland">
+        <div class="map-pin-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(245,236,215,.3)" stroke-width="1.4" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          <p>2847 NW Thurman St<br>Portland, OR 97210</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Folio <span>&</span> Fox</div>
+        <div class="footer-sub">Portland's Independent Bookshop · Est. 2009</div>
+      </div>
+      <ul class="footer-nav" role="list">
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer-copy">
+        &copy; 2025 Folio &amp; Fox Books<br>
+        <span style="color:rgba(245,236,215,.12)">All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JAVASCRIPT ─────────────────────────────── -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
